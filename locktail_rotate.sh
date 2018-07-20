@@ -15,7 +15,7 @@ do
     # echo $CURRENT_TARGET
     if [ -e ${CURRENT_TARGET} ]; then
         IO=`stat -c %i ${CURRENT_TARGET}`
-        tail -f ${CURRENT_TARGET} 2> /dev/null & echo $! > ${PID};
+        tail -f ${CURRENT_TARGET} 2> /dev/null >1 & echo $! > ${PID};
     fi
     
     # as long as the file exists and the inode number did not change
