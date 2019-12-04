@@ -1,7 +1,7 @@
 Locktail
 =========
 
-Tailing on a file whose is rotated and its name changes daily like `test-'date +"%Y%m%d".log`.
+Tailing on a file which is rotated and its name is changed daily like `test-'date +"%Y%m%d".log`.
 
   - locktail.sh: Tailing on rotated files with static file names
   - locktail_rotate.sh: Tailing on rotated files with rotated file names
